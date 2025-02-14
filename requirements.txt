@@ -1,0 +1,10 @@
+requests
+fastapi
+uvicorn
+mlflow
+cv2
+numpy
+filetype
+dagshub
+matplotlib
+tensorflow
