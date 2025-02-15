@@ -20,7 +20,7 @@ BrainTumorDetection_MLOPS is a FastAPI-based brain tumor detection system design
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/BrainTumorDetection_MLOPS.git
+git clone https://github.com/RijoSLal/BrainTumorDetection_MLOPS.git
 cd BrainTumorDetection_MLOPS
 ```
 
