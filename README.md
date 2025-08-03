@@ -1,7 +1,7 @@
 # BrainTumorDetection_MLOPS
 
 ## Overview
-BrainTumorDetection_MLOPS is a FastAPI-based brain tumor detection system designed with MLOps principles for efficient model deployment, automated data handling, and seamless API integration. The system uses MLflow for model tracking, DVC for data versioning, and DAGsHub( https://dagshub.com/slalrijo2005/BTD ) as the central server for both MLflow and DVC. It employs a Vision Transformer (ViT) model for accurate tumor detection from medical images.
+BrainTumorDetection_MLOPS is a FastAPI-based brain tumor detection system designed with MLOps principles for efficient model deployment, automated data handling, and seamless API integration. The system uses MLflow for model tracking, DVC for data versioning, and DAGsHub (https://dagshub.com/slalrijo2005/BTD) as the central server for both MLflow and DVC. It employs a Vision Transformer (ViT) model for accurate tumor detection from medical images.
 
 ## Features
 - **FastAPI-based API** for real-time predictions.
