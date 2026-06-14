@@ -1,7 +1,9 @@
 # BrainTumorDetection_MLOPS
 
+![BrainTumorDetection_MLOPS](assets/image.png)
+
 ## Overview
-BrainTumorDetection_MLOPS is a FastAPI-based brain tumor detection system designed with MLOps principles for efficient model deployment, automated data handling, and seamless API integration. The system uses MLflow for model tracking, DVC for data versioning, and DAGsHub as the central server for both MLflow and DVC. It employs a Vision Transformer (ViT) model for accurate tumor detection from medical images.
+BrainTumorDetection_MLOPS is a FastAPI-based brain tumor detection system designed with MLOps principles for efficient model deployment, automated data handling, and seamless API integration. The system uses MLflow for model tracking, DVC for data versioning, and DAGsHub (https://dagshub.com/slalrijo2005/BTD) as the central server for both MLflow and DVC. It employs a Vision Transformer (ViT) model for accurate tumor detection from medical images.
 
 ## Features
 - **FastAPI-based API** for real-time predictions.
@@ -20,7 +22,7 @@ BrainTumorDetection_MLOPS is a FastAPI-based brain tumor detection system design
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/BrainTumorDetection_MLOPS.git
+git clone https://github.com/RijoSLal/BrainTumorDetection_MLOPS.git
 cd BrainTumorDetection_MLOPS
 ```
 
@@ -57,21 +59,26 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 - **Endpoint:** `/docs`
 - **Method:** `POST`
 - **Payload:**
-  ```json
-  {
-    "image": "base64_encoded_image"
-  }
+  ```bash
+  curl -X 'POST' \
+    'http://0.0.0.0:8000/' \
+    -H 'accept: application/json' \
+    -H 'Content-Type: multipart/form-data' \
+    -F 'file=@x_ray.jpg;type=image/jpeg'
   ```
 - **Response:**
   ```json
   {
-    "prediction": "No abnormal growth detected. However, consult a doctor for confirmation"
+     "prediction": 1,  // Indicates the possibility of a brain tumour (1 = Yes, 0 = No)
+     "noise_level": 0.452,
+     "denoise": true
   }
+
   ```
 
 ## Contributing
 Feel free to contribute.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 

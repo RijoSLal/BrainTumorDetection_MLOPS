@@ -1,0 +1,17 @@
+model:
+  name: "tumor_model"
+  version: "1"
+
+mlflow:
+  tracking_uri: "https://dagshub.com/slalrijo2005/BTD.mlflow"
+
+validation:
+  allowed_image_types:
+    - "image/png"
+    - "image/jpeg"
+  max_file_size: 10485760  # 10 * 1024 * 1024 (10MB)
+  noise_threshold: 15.0  # threshold for triggering DnCNN
+
+denoising:
+  repo_id: "qualcomm/DnCNN"
+  filename: "dncnn.onnx"

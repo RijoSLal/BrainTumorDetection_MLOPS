@@ -1,10 +1,14 @@
 requests
 fastapi
 uvicorn
-mlflow
-cv2
+mlflow==2.20.1
+opencv-python
 numpy
 filetype
 dagshub
 matplotlib
 tensorflow
+onnxruntime
+PyYAML
+PyWavelets
+huggingface_hub
