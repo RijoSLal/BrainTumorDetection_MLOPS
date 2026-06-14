@@ -10,6 +10,7 @@ BrainTumorDetection_MLOPS is a FastAPI-based brain tumor detection system design
 - **MLflow integration** to track model performance and experiments.
 - **DVC (Data Version Control)** for handling datasets efficiently.
 - **DAGsHub as a unified platform** for MLflow and DVC.
+- **Built-in CLAHE algorithm** for medical image enhancement and **DnCNN model** for image denoising
 - **Automated pipeline** for data processing and deployment.
 
 ## Tech Stack
