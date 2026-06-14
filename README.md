@@ -54,6 +54,13 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/yourusername/BrainTumorDetection_
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
+### Or
+
+```bash
+sudo docker pull rijoslal/btd:latest
+sudo docker run -p 8000:8080 -v $(pwd)/config.yaml:/app/config.yaml --restart unless-stopped -d -t rijoslal/btd:latest 
+```
+
 ## API Endpoints
 
 ### **Predict Tumor**
